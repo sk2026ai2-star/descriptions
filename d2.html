@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>동아리스마트출석시스템 명세서</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background: #f5f7fa;
+  }
+  h1 {
+    color: #2c3e50;
+  }
+  h2 {
+    background: #3498db;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  .box {
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  th {
+    background: #ecf0f1;
+  }
+</style>
+</head>
+
+<body>
+
+<h1>📘 동아리스마트출석시스템 명세서</h1>
+
+<div class="box">
+<h2>1. 앱소개</h2>
+<p><b>앱 이름:</b> 동아리스마트출석시스템</p>
+<p><b>앱 목적:</b> 동아리 학생들의 출결을 간편하게 관리</p>
+<p><b>한줄소개:</b> 선생님을 위한 출결 관리 서비스</p>
+<p><b>주요 사용자:</b> 선생님</p>
+</div>
+
+<div class="box">
+<h2>2. 화면 구성</h2>
+<ul>
+  <li><b>학생 목록 화면</b> - 학생 불러오기 버튼, 리스트</li>
+  <li><b>출결 체크 화면</b> - 날짜 선택, 출결 선택, 저장 버튼</li>
+  <li><b>출결 조회 화면</b> - 날짜 선택, 조회 결과</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>3. 기능 목록</h2>
+<table>
+<tr><th>기능</th><th>설명</th><th>필수 여부</th></tr>
+<tr><td>학생 목록 불러오기</td><td>시트에서 학생 데이터 불러오기</td><td>필수</td></tr>
+<tr><td>출결 체크</td><td>출석/지각/조퇴/결석 선택</td><td>필수</td></tr>
+<tr><td>데이터 저장</td><td>출결 결과 저장</td><td>필수</td></tr>
+<tr><td>출결 조회</td><td>날짜별 데이터 확인</td><td>필수</td></tr>
+</table>
+</div>
+
+<div class="box">
+<h2>4. Google Sheets 구조</h2>
+
+<h3>Students 시트</h3>
+<table>
+<tr><th>Name</th></tr>
+<tr><td>홍길동</td></tr>
+</table>
+
+<h3>Attendance 시트</h3>
+<table>
+<tr><th>Date</th><th>Name</th><th>Status</th></tr>
+<tr><td>2026-04-05</td><td>홍길동</td><td>출석</td></tr>
+</table>
+
+</div>
+
+</body>
+</html>

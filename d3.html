@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>동아리스마트출석시스템</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+}
+
+/* 슬라이드 */
+.slide {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* 제목 */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 32px;
+}
+
+h2 {
+  color: #3498db;
+  border-left: 6px solid #3498db;
+  padding-left: 10px;
+}
+
+/* 카드 */
+.card {
+  background: #f8f9fb;
+  padding: 15px;
+  border-radius: 12px;
+  margin: 10px 0;
+}
+
+/* 리스트 */
+ul {
+  padding-left: 20px;
+}
+
+/* 테이블 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th {
+  background: #3498db;
+  color: white;
+}
+
+td, th {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* 강조 */
+.highlight {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* 버튼 느낌 */
+.badge {
+  display: inline-block;
+  background: #3498db;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- 슬라이드 1 -->
+<div class="slide">
+  <h1>📱 동아리스마트출석시스템</h1>
+  <div class="card">
+    <p><span class="highlight">한줄소개</span></p>
+    <p>선생님을 위한 간편한 출결 관리 서비스</p>
+  </div>
+
+  <div class="card">
+    <p><b>🎯 목적</b></p>
+    <p>동아리 학생들의 출결을 빠르고 쉽게 관리</p>
+  </div>
+
+  <div class="card">
+    <p><b>👩‍🏫 주요 사용자</b></p>
+    <p>선생님</p>
+  </div>
+</div>
+
+<!-- 슬라이드 2 -->
+<div class="slide">
+  <h2>🚀 핵심 기능</h2>
+
+  <div class="card">
+    <span class="badge">기능 1</span>
+    학생 멤버 불러오기
+  </div>
+
+  <div class="card">
+    <span class="badge">기능 2</span>
+    날짜별 출결 체크 (출석 / 지각 / 조퇴 / 결석)
+  </div>
+
+  <div class="card">
+    <span class="badge">기능 3</span>
+    날짜별 출결 조회
+  </div>
+</div>
+
+<!-- 슬라이드 3 -->
+<div class="slide">
+  <h2>🖥 화면 구성</h2>
+
+  <div class="card">
+    <b>① 학생 목록 화면</b>
+    <ul>
+      <li>학생 불러오기 버튼</li>
+      <li>학생 리스트</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <b>② 출결 체크 화면</b>
+    <ul>
+      <li>날짜 선택</li>
+      <li>출석 상태 선택</li>
+      <li>저장 버튼</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <b>③ 출결 조회 화면</b>
+    <ul>
+      <li>날짜 선택</li>
+      <li>조회 버튼</li>
+      <li>결과 테이블</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 슬라이드 4 -->
+<div class="slide">
+  <h2>⚙ 기능 목록</h2>
+
+  <table>
+    <tr>
+      <th>기능</th>
+      <th>설명</th>
+      <th>필수</th>
+    </tr>
+    <tr>
+      <td>학생 불러오기</td>
+      <td>시트에서 학생 데이터 가져오기</td>
+      <td>✔</td>
+    </tr>
+    <tr>
+      <td>출결 체크</td>
+      <td>출석 상태 선택</td>
+      <td>✔</td>
+    </tr>
+    <tr>
+      <td>데이터 저장</td>
+      <td>출결 결과 저장</td>
+      <td>✔</td>
+    </tr>
+    <tr>
+      <td>출결 조회</td>
+      <td>날짜별 확인</td>
+      <td>✔</td>
+    </tr>
+  </table>
+</div>
+
+<!-- 슬라이드 5 -->
+<div class="slide">
+  <h2>📊 데이터 구조 (Google Sheets)</h2>
+
+  <div class="card">
+    <b>Students 시트</b>
+    <table>
+      <tr><th>Name</th></tr>
+      <tr><td>홍길동</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <b>Attendance 시트</b>
+    <table>
+      <tr><th>Date</th><th>Name</th><th>Status</th></tr>
+      <tr><td>2026-04-05</td><td>홍길동</td><td>출석</td></tr>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>
